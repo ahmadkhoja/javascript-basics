@@ -11,5 +11,34 @@
     <label for="city">Your city  : </label><input type="text" name="city" value="New York" id="city" />
     <button type="button" name="button">Reset</button>
   </form>
+
+
+<script type="text/javascript">
+	// 	## Step 4
+
+	// 1. When "Reset" is pressed, clear all fields in the form
+	// 2. When "Reset" is pressed, show a "yes/no" dialog, and clear all fields IF the user presses "yes"
+	// 3. Commit
+
+	let name = document.getElementById('name')
+	let surname = document.getElementById('surname')
+	let city = document.getElementById('city')
+	let reset = document.querySelector('button')
+
+	reset.addEventListener('click',function () {
+		 
+    if (confirm("Are you sure?")) {
+        name.value = ""
+        surname.value = ""
+        city.value = ""
+    } else {
+        return;
+    }
+    // document.getElementById("demo").innerHTML = txt;
+	})
+
+</script>
+
+
 </body>
 </html>
