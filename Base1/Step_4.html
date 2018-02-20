@@ -5,11 +5,31 @@
         <meta charset="UTF-8">
     </head>
     <body>
-        <form>
+        
             <label for="name">name : </label><input type="text" name="name" id="name"/>
             <label for="surname">surname : </label><input type="text" name="surname" id="surname"/>
             <label for="city">city : </label><input type="text" name="city" id="city"/>
             <button  name="validate" id="validate">Validate</button>
-        </form>
+        
+
+        <script type="text/javascript">
+            
+            
+
+            let name = document.getElementById('name')
+            let surname =document.getElementById('surname')
+            let city =document.getElementById('city')
+            let submit =document.getElementById('validate')
+
+            submit.addEventListener('click',function() {
+                alert('name: '+ name.value+
+                ' surname: '+ surname.value+
+                ' city: '+ city.value
+                )
+            });
+
+
+        </script>
+
     </body>
 </html>
