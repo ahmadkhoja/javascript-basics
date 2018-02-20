@@ -7,6 +7,29 @@
 <body>
   <form>
     <label for="name">Your name  : </label><input type="text" name="name" value="" id="name"/>
+    <div></div>
   </form>
+
+  <script type="text/javascript">
+
+ 	// document.querySelector("div").style.backgroundColor = "red";	
+
+	
+	// 4. When the input changes, display the new text in the div
+	// 5. Commit
+
+  	let divSelected = document.querySelector('div')
+  	let inputSelected = document.querySelector('input')
+  	
+  	inputSelected.addEventListener('keyup',function () {
+
+  		
+  		 divSelected.innerHTML = inputSelected.value;
+
+  	})
+
+
+  </script>
+
 </body>
 </html>
