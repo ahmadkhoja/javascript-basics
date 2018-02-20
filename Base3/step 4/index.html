@@ -10,5 +10,25 @@
     <label for="confirmation">Confirm : </label><input type="text" name="confirmation" value="" id="confirmation" />
     <button type="button" name="button" >Test</button>
   </form>
+
+	<script type="text/javascript">
+		
+		let pass1 = document.getElementById('password')
+		let pass2 = document.getElementById('confirmation')
+		let submit = document.querySelector('button')
+
+		submit.addEventListener('click',function () {
+			if(pass1.value == pass2.value){
+				return;
+			}else{
+				pass1.style.borderWidth = "10px";
+				pass2.style.borderWidth = "10px";
+			}
+		})
+		
+
+	</script>
+
+
 </body>
 </html>
