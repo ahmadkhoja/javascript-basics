@@ -5,10 +5,83 @@
     <title>Step 6</title>
   </head>
   <body>
+    <div class="container">
       <img src="images/image1.jpg" id="image1" />
       <img src="images/image2.jpg" id="image2" />
       <img src="images/image3.jpg" id="image3" />
       <img src="images/image4.jpg" id="image4" />
       <img src="images/image5.jpg" id="image5" />
+    </div>
+
+    <script type="text/javascript">
+      
+      // ## Step 5
+
+      // 1. Target the image (querySelector)
+      // 2. Add an event listener to it (onMouseOver)
+      // 3. Change the image when the mouse is on it
+      // 4. Commit
+
+      let image1 = document.querySelector('#image1')
+      let image2 = document.querySelector('#image2')
+      let image3 = document.querySelector('#image3')
+      let image4 = document.querySelector('#image4')
+      let image5 = document.querySelector('#image5')
+
+      let imageMouseOver = function (img,src) {
+          img.addEventListener('mouseover',function () {
+          img.src = src;
+      })
+    }
+
+    let imageMouseOut = function (img,src) {
+       
+       img.addEventListener('mouseout',function () {
+          img.src = src;
+      })
+    }
+    //mouse over
+
+    imageMouseOver(image1,"images/image1_2.jpg")
+    imageMouseOver(image2,"images/image2_2.jpg")
+    imageMouseOver(image3,"images/image3_2.jpg")
+    imageMouseOver(image4,"images/image4_2.jpg")
+    imageMouseOver(image5,"images/image5_2.jpg")
+
+    //mouse out
+
+    imageMouseOut(image1,"images/image1.jpg")
+    imageMouseOut(image2,"images/image2.jpg")
+    imageMouseOut(image3,"images/image3.jpg")
+    imageMouseOut(image4,"images/image4.jpg")
+    imageMouseOut(image5,"images/image5.jpg")
+
+
+
+      //Old Code !!!
+      // image1.addEventListener('mouseover',function () {
+      //     image1.src = "images/image1_2.jpg"
+      // })
+
+      // image2.addEventListener('mouseover',function () {
+      //     image2.src = "images/image2_2.jpg"
+      // })
+
+      // image3.addEventListener('mouseover',function () {
+      //     image3.src = "images/image3_2.jpg"
+      // })
+
+      // image4.addEventListener('mouseover',function () {
+      //     image4.src = "images/image4_2.jpg"
+      // })
+
+      // image5.addEventListener('mouseover',function () {
+      //     image5.src = "images/image5_2.jpg"
+      // })
+
+
+    </script>
+
+
   </body>
 </html>
