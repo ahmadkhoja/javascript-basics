@@ -5,12 +5,6 @@
         <meta charset="UTF-8">
     </head>
     <body>
-
-    	<div id = "main">
-    		
-    	</div>
-    	<button id="ok">OK</button>
-
     	<script type="text/javascript">
     		 // `name`, `surname` and `city`.
     		 let container = document.getElementById('main')
@@ -18,9 +12,14 @@
     		 let name = 'ahmad'
     		 let surname = 'khoja'
     		 let city = 'beirut'
-    		 container.innerHTML =  name +'<br/>'
-    		 container.innerHTML +=  surname+'<br/>'
-    		 container.innerHTML +=  city
+    		 document.write(
+    		 	name + '<br/>'+
+    		 	surname+'<br/>'+
+    		 	city+'<br/>'+
+    		 	'<button>OK</button>'
+    		 	) 
+    		 // container.innerHTML +=  
+    		 // container.innerHTML +=  city
     	</script>
     </body> 
 </html>
