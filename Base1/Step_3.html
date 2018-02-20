@@ -5,5 +5,24 @@
         <meta charset="UTF-8">
     </head>
     <body>
+    	<!-- 
+1. Show a dialog box asking the user for his name
+2. Show an alert box saying "Hello, ", then the name provided -->
+
+    	<script type="text/javascript">
+    		
+    		document.write(
+    			'Enter Your Name here <input type="text" id="input">'+
+    			'<button id="button">Submit</button>'
+    			)
+
+    		let result = document.getElementById('input')
+    		let button =document.getElementById('button')
+    		button.addEventListener('click',function() {
+    			alert(result.value)
+    		});
+
+    	</script>
+
     </body>
 </html>
