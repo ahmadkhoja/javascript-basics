@@ -8,5 +8,21 @@
   <form>
     <label for="name">Your name  : </label><input type="text" name="name" value="" id="name"/>
   </form>
+
+	<script type="text/javascript">
+		// ## Step 2
+
+		// 1. Target the input (querySelector)
+		// 2. When the input loses focus, show a dialog saying "thank you for participating!" (onblur)
+		// 3. Commit
+		// let selectedImage = document.querySelector('#image1')
+		let inputSelected = document.querySelector('input')
+
+		inputSelected.addEventListener('blur',function () {
+			alert('thank you for participating!')
+		})
+
+	</script>
+
 </body>
 </html>
