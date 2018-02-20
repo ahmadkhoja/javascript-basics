@@ -6,5 +6,23 @@
   </head>
   <body>
       <img src="images/image1.jpg" id="image1" />
+
+      <script type="text/javascript">
+  		// ## Step 1
+
+		// 1. Target the image (querySelector)
+		// 2. Add an event listener to it (mouseover)
+		// 3. Change the image when the mouse is on it
+		// 4. Commit	
+
+		let selectedImage = document.querySelector('#image1')
+
+		selectedImage.addEventListener('mouseover',function () {
+		 	 selectedImage.src = "images/image1_2.jpg"
+		})
+
+
+      </script>
+
   </body>
-</html>
+</html> 
